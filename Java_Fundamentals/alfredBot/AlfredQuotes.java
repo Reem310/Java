@@ -16,20 +16,16 @@ public class AlfredQuotes {
         Date date = new Date();
         return "It is currently " + date;
     }
-    
+
     public String respondBeforeAlexis(String conversation) {
         // YOUR CODE HERE
-        int a = conversation.indexOf("Alexis");
-        int b = conversation.indexOf("Alfred");
-        if (a>=0){
+        if (conversation.indexOf("Alexis")>=0){
             return "Right away, sir. She certainly isn't sophisticated enough for that.";
         }
-        else if (b>=0){
+        if (conversation.indexOf("Alfred")>=0){
             return "At your service. As you wish, naturally.";
         }
-        else{
             return "Right. And with that I shall retire.";
-        }
     }
     
 	// NINJA BONUS
