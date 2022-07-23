@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.date{
+	color:blue;
+	text-align:center;
+	margin:5%;
+}
+.time{
+	color:green;
+	text-align:center;
+	margin:5%;
+}
+.a{
+	text-align:center;
+	margin:5%;
+	display:flex;
+	justify-content:space-evenly;
+}
