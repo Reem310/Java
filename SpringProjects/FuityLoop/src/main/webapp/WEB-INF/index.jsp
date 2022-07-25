@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,24 +18,28 @@
 <body class="container my-3">
 	<h1>Fruit Store</h1>
 	<table class="table table-hover">
-	<thead class="table-primary">
-	<tr>
-	<th>Name</th>
-	<th>Price</th>
-	</tr>
-	</thead>
-	<tbody>
-	<c:forEach var="items" items="${fruits}">
-	<tr>
-	<td>	
-    <p><c:out value="${items.name}"></c:out></p>
-    </td>
-    <td>	
-    <p><c:out value="${items.price}"></c:out></p>
-    </td>
-	</tr>
-	 </c:forEach>
-	</tbody>
+		<thead class="table-primary">
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="items" items="${fruits}">
+				<tr>
+					<td>
+						<p>
+							<c:out value="${items.name}"></c:out>
+						</p>
+					</td>
+					<td>
+						<p>
+							<c:out value="${items.price}"></c:out>
+						</p>
+					</td>
+				</tr>
+			</c:forEach>
+		</tbody>
 	</table>
 </body>
 </html>
